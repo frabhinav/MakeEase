@@ -1,0 +1,268 @@
+/* Import the 'geist-mono' font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono&display=swap");
+
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-family: "Geist Mono", monospace; /* Apply the Geist Mono font */
+  background: linear-gradient(
+    90deg,
+    hsla(64, 41%, 92%, 1) 0%,
+    hsla(196, 83%, 84%, 1) 50%,
+    hsla(305, 75%, 83%, 1) 100%
+  );
+  color: rgba(255, 255, 255, 0.651);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Align navbar buttons to the left */
+  padding: 10px 20px;
+  position: absolute; /* Fix navbar at top */
+  top: 0;
+  right: 0;
+  /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for navbar */
+}
+
+.scene-container {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  font-size: 2rem;
+  color: black;
+  margin-left: 20px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.scene-wrapper {
+  width: 100%;
+  /* height: 100%; */
+}
+
+/* Style the container for the buttons */
+.button-container {
+  position: absolute;
+  top: 20px; /* Adjust the distance from the top */
+  left: 20px; /* Adjust the distance from the left */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the buttons */
+.home-button {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  /* background-color: blue; */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none; /* Remove border */
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Add a hover effect */
+}
+
+/* Add hover effect on buttons */
+.home-button:hover {
+  background-color: rgb(57, 57, 58);
+}
+
+.login-button {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  /* background-color: blue; */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none; /* Remove border */
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: rgb(57, 57, 58);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.signin-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.signin-main-button {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  /* background-color: blue; */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none; /* Remove border */
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.signin-dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #1a1a1a;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-dropdown button {
+  background: none;
+  border: none;
+  padding: 10px 12px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.signin-main-button:hover {
+  background-color: rgb(57, 57, 58);
+}
+
+.signin-dropdown button:hover {
+  background-color: rgb(57, 57, 58);
+}
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  /* background-color: blue; */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none; /* Remove border */
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #1a1a1a;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logout-button {
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none; /* Remove border */
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  background-color: rgb(57, 57, 58);
+}
+
+.logout-button:hover {
+  background-color: rgb(57, 57, 58);
+}
+
+.floating-chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.footer {
+  /* background-color: #111; */
+  color: #8b8b8b;
+  padding: 1.2rem 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #8b8b8b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-note p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #aaa;
+}

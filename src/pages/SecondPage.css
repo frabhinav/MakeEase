@@ -1,0 +1,12 @@
+.secondpage-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgray;
+  color: white;
+}
+
+.secondpage-title {
+  font-size: 2rem;
+}
