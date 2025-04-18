@@ -57,7 +57,7 @@ const HomePage = () => {
       {/* Navbar at the top */}
       <div className="navbar">
         <Link to="/page2">
-          <button className="home-button">cummingsoon</button>
+          <button className="home-button">soon</button>
         </Link>
         {/* <Link to="/ChatBot">
           <button className="home-button">ChatBot</button>
